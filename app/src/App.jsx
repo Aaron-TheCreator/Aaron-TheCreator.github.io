@@ -45,7 +45,7 @@ function App() {
           <LapTop scale={[1, 1, 1]} />
           <TerminalPlanet />
           <OrbitControls />
-          <ambientLight intensity={1} />
+          <ambientLight intensity={0.1} />
         </Suspense>
       </Canvas>
     </CanvasContainer>

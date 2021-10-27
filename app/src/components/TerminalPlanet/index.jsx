@@ -10,13 +10,13 @@ import EarthNormalMap from "../../assets/textures/8k_earth_normal_map.jpg";
 import EarthSpecularMap from "../../assets/textures/8k_earth_specular_map.jpg";
 import EarthCloudsMap from "../../assets/textures/8k_earth_clouds.jpg";
 import TermMap from "../../assets/textures/wallpaperflare.com_wallpaper.jpg";
-import SignMap from "../../assets/textures/40acres-header-mobile.png";
+import FaceMap from "../../assets/textures/face-pic.jpg";
 import { TextureLoader } from "three";
 
 export function TerminalPlanet(props) {
-  const [termMap, normalMap, specularMap, cloudsMap, signMap] = useLoader(
+  const [termMap, normalMap, specularMap, cloudsMap, faceMap] = useLoader(
     TextureLoader,
-    [TermMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap, SignMap]
+    [TermMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap, FaceMap]
   );
   
   // hook for position switch
@@ -90,7 +90,7 @@ export function TerminalPlanet(props) {
       {/* cube mesh */}
       <animated.mesh ref={cubeRef} position={properties.cubePos} scale={properties.cubeScale}>
         <boxBufferGeometry args={[2, 2, 2]}  />
-        <meshPhongMaterial map={signMap} transparent={true} />
+        <meshPhongMaterial map={faceMap} transparent={true} />
       </animated.mesh>
     </>
   );
