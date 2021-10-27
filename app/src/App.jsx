@@ -1,11 +1,11 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "react-three-fiber";
-import { useCubeTexture } from "@react-three/drei";
+// import { useCubeTexture } from "@react-three/drei";
 import  LapTop  from "./components/LapTop";
 import { StarSphere } from "./components/StarSphere";
 import "./style/index.css";
 import styled from "styled-components";
-import * as THREE from "three";
+// import * as THREE from "three";
 import { OrbitControls } from "@react-three/drei";
 import { TerminalPlanet } from "./components/TerminalPlanet";
 
@@ -17,20 +17,20 @@ const CanvasContainer = styled.div`
 `;
 
 
-function Scene() {
-  const envMap = useCubeTexture(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png'], {
-    path: 'src/assets/textures/Standard-Cube-Map/',
-  })
+// function Scene() {
+//   const envMap = useCubeTexture(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png'], {
+//     path: 'src/assets/textures/Standard-Cube-Map/',
+//   })
 
-  return (
-    <>
-      <mesh>
-        <boxBufferGeometry args={[50, 50, 50]} />
-        <meshStandardMaterial envMap={envMap} />
-      </mesh>
-    </>
-  )
-};
+//   return (
+//     <>
+//       <mesh>
+//         <boxBufferGeometry args={[50, 50, 50]} />
+//         <meshStandardMaterial envMap={envMap} />
+//       </mesh>
+//     </>
+//   )
+// };
 
 function App() {
   

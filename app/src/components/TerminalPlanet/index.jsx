@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useFrame, useLoader } from "react-three-fiber";
 // import { useRender } from "react-three-fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+// import { OrbitControls, Stars } from "@react-three/drei";
 import { useSpring, animated } from "@react-spring/three";
 import * as THREE from "three";
 

@@ -1,12 +1,12 @@
-import React, { useRef, useState } from "react";
-import { useFrame, useLoader } from "@react-three/fiber";
+import React, { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 // import { useRender } from "react-three-fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
-import { useSpring, animated } from "@react-spring/three";
-import * as THREE from "three";
+import { Stars } from "@react-three/drei";
+// import { useSpring, animated } from "@react-spring/three";
+// import * as THREE from "three";
 
 // import StarsTexture from "../../assets/textures/8k_stars_milky_way.jpeg";
-import { TextureLoader } from "three";
+// import { TextureLoader } from "three";
 
 export function StarSphere(props) {
     // const [ colorMap ] = useLoader(
