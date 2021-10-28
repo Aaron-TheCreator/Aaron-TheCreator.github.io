@@ -25,12 +25,12 @@ export function StarSphere(props) {
 
     return (
       <>
-        <ambientLight intensity={.05} />
+        {/* <ambientLight intensity={.05} /> */}
         <Stars
             ref={starRef}
             radius={300}
-            depth={40}
-            count={40000}
+            depth={50}
+            count={60000}
             factor={7}
             saturation={0}
             fade={true}
