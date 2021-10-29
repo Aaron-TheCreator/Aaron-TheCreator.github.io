@@ -18,7 +18,7 @@ const CanvasContainer = styled.div`
   display: grid;
   flex-direction: row;
   text-shadow: 0 0 5px #C8C8C8;
-  border: 1px solid red;
+  // border: 1px solid red;
 `;
 
 const OrbitButton = styled.button`
