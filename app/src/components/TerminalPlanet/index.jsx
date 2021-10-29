@@ -21,6 +21,9 @@ export function TerminalPlanet(props) {
   
   // hook for position switch
   const [active, setActive] = useState(false);
+  
+
+  
   // useSpring for auto animation transition for position and scale
   const properties = useSpring({
     position: active ? [0, 0, 3] : [0.6, 0.9, 0.01],
@@ -46,16 +49,7 @@ export function TerminalPlanet(props) {
 
   return (
     <>
-      {/* <ambientLight intensity={1} /> */}
       <pointLight color="#f6f3ea" position={[2, 0, 5]} intensity={2.2} />
-      {/* <Stars
-        radius={300}
-        depth={60}
-        count={20000}
-        factor={7}
-        saturation={0}
-        fade={true}
-      /> */}
       {/* clouds mesh */}
       <animated.mesh ref={cloudsRef} onClick={() => setActive(!active)} scale={properties.scale} position={properties.position} >
         <sphereGeometry args={[1.005, 32, 32]} />
@@ -77,15 +71,6 @@ export function TerminalPlanet(props) {
           metalness={0.4}
           roughness={0.7}
         />
-        
-        {/* <OrbitControls
-          enableZoom={true}
-          enablePan={true}
-          enableRotate={true}
-          zoomSpeed={0.6}
-          panSpeed={0.5}
-          rotateSpeed={0.4}
-        /> */}
       </animated.mesh >
       {/* cube mesh */}
       <animated.mesh ref={cubeRef} position={properties.cubePos} scale={properties.cubeScale}>

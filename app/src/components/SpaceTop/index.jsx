@@ -8,7 +8,7 @@ const Container = styled.div`
     // top: 1;
     // left: 1;
     margin: 5%;
-    align-self: center;
+    align-self: start;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -16,16 +16,41 @@ const Container = styled.div`
 
 const NameContainer = styled.div`
     margin: 0;
-    background-color: #29750f;
     height: auto;
-    color: #a7adba
+    width: auto;
+    font-family: Inconsolata, monospace;
+    font-size: .8em;
+    color: white;
+    border: 4px solid #29750f;
+    border-radius: 5%;
+    transition: all 0.4s ease 0s;
+    &:hover {
+        background-color: #black;
+        background-image: radial-gradient(
+            rgba(0, 150, 0, 0.75), black 120%
+          );
+        border: 4px solid #47443f;
+        color: white;
+        transition: all 0.4s ease 0s;
+    };
+    &:after {
+        content: "";
+        position: absolute;
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(black, 0.15),
+            rgba(black, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+    }
 `;
 
 const Overlay = () => {
     return (
         <Container>
             <NameContainer>
-                <h1>A. Aaron Burns</h1>
+                <a href="https://www.github.com/Aaron-TheCreator"><pre><output><h1>A. Aaron Burns</h1></output></pre></a>
             </NameContainer>
         </Container>
     );
