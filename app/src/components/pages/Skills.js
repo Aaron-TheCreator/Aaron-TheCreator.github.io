@@ -17,7 +17,7 @@ const Skills = () => {
           {" "}
           <span className="purp">import</span> SoftwareEngineer{" "}
           <span className="purp">from</span>{" "}
-          <span className="green">{`"nathaniel-richards"`}</span>;
+          <span className="green">{`"a-aaron-burns"`}</span>;
         </p>
         <div className="component" style={{ marginTop: "10%" }}>
           <p>
