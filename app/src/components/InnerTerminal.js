@@ -54,6 +54,11 @@ const TWindow = () => {
           * author: Nathaniel Richards
           * title: vscodeportfolio
           * source: https://github.com/NateTheDev1/vscodeportfolio 
+           
+           
+          * author: Mateusz Wisniowski
+          * title: HDRI-to-CubeMap
+          * source: https://matheowis.github.io/HDRI-to-CubeMap/
           `,
         }}
         descriptions={{
