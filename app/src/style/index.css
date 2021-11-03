@@ -24,10 +24,14 @@ a {
   justify-self: end;
   align-self: end;
   justify-content: center;
+  margin-bottom: 2%;
+  margin-right: 2%;
   align-items: center;
   z-index: 1;
-  max-height: 30%;
+  height: 60%;
+  max-height: 45%;
   max-width: 45%;
+  font-size: 1.2rem;
 }
 #terminal {
   width: 100%;
@@ -36,7 +40,7 @@ a {
 #terminal__bar {
   display: flex;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   align-items: center;
   padding: 0 0.8rem;
   box-sizing: border-box;
@@ -84,7 +88,8 @@ a {
   background-color: black;
   background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
   font-family: "Ubuntu Mono";
-  height: calc(100% - 3rem);
+  height: 100%;
+  /* height: calc(100% - 2rem); */
   /* padding-top: 1px; */
   padding-left: 1%;
   /* overflow: auto; */
@@ -108,7 +113,7 @@ a {
 }
 #terminal__prompt--cursor {
   display: block;
-  height: 1.1rem;
+  height: 1.5rem;
   width: 0.8rem;
   margin-left: 0.9rem;
   animation: blink 1200ms linear infinite;

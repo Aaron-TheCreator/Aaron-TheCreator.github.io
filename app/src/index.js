@@ -1,12 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style/index.css";
-import App from "./App.jsx";
-import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// Root CSS
+import "./css/normalize.css";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Root App
+import SpaceApp from "./App";
+
+// Redux
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+
+// Reducer
+import { reducer } from "./services/reducer";
+
+import thunk from "redux-thunk";
+
+const store = createStore(reducer, applyMiddleware(thunk));
+
+ReactDOM.render(
+  <Provider store={store}>
+    <SpaceApp />
+  </Provider>,
+  document.getElementById("root")
+);
