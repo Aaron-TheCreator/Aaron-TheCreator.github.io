@@ -1,9 +1,8 @@
 import React from "react";
 import CodeBar from "../CodeBar";
 import "../../css/Projects.css";
-// import storysquadimg from "../../images/storysquadexample.png"
+import recLetter from "../../images/Rec_Letter_for_Aaron_Burns.pdf";
 
-//https://gyazo.com/9675bebd442ae2b62aaf387370560403
 const Projects = () => {
   return (
     <div className="pj-root">
@@ -42,6 +41,9 @@ const Projects = () => {
               target="__blank"
             >
               Public GitHub Repo
+            </a>
+            <a href={recLetter} alt="Letter of Recommendation from CEO">
+              Recommendation Letter
             </a>
           </div>
         </div>

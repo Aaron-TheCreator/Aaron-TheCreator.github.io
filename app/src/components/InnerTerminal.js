@@ -41,7 +41,7 @@ const TWindow = () => {
           twitter: () => "https://twitter.com/thirdeyethuggin",
           javascript: () =>
             "Me and JavaScript are the same age, AND we're besties :) <3 ",
-          run_credits: () => `Thanks to:
+          roll_credits: () => `Thanks to:
           * author:	Blue Lantern (https://sketchfab.com/genoris2)
           * title:	CyberPunk Laptop
           * source:	https://sketchfab.com/3d-models/cyberpunk-laptop-8330c89e8431451db3aa9d15c5836ddf
@@ -66,7 +66,7 @@ const TWindow = () => {
           showmsg: "shows a message",
           twitter: "reveals my twitter link",
           javascript: "What do I Think?",
-          run_credits: "See who helped me create this experience",
+          roll_credits: "See who helped me create this experience",
         }}
         msg="You have found my terminal O_o ...type help for options"
       />

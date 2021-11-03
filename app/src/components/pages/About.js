@@ -10,7 +10,6 @@ const About = () => {
       <div className="ab-content">
         <h2>A. Aaron Burns</h2>
         <h3>Software Engineer</h3>
-        {/* will replace img href with https://avatars.githubusercontent.com/u/53560051?s=400&u=6c965a360cba0f5e314e9583667ae1103fa57313&v=4 */}
         <img
           src="https://avatars.githubusercontent.com/u/53560051?s=400&u=6c965a360cba0f5e314e9583667ae1103fa57313&v=4"
           alt="Aaron Burns"
