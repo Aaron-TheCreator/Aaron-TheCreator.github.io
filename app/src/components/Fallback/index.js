@@ -36,7 +36,7 @@ const Fallback = () => {
           secondaryColor="#24523b"
           height={300}
           width={300}
-          timeout={7000}
+          timeout={10000}
         />
       </SpinnerCont>
       <LoadText>
