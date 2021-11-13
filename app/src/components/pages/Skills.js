@@ -5,7 +5,7 @@ import "../../css/Skills.css";
 const Skills = () => {
   return (
     <div className="sk-root">
-      <CodeBar rowAmount={66} />
+      <CodeBar rowAmount={68} />
       <div className="sk-content">
         <p>
           {" "}
@@ -32,6 +32,9 @@ const Skills = () => {
           <p style={{ paddingLeft: "3%" }}>
             <span className="purp">return</span>
             <span className="orange"> (</span>
+          </p>
+          <p style={{ paddingLeft: "5%" }}>
+            <span className="red">{`<>`}</span>
           </p>
           <p style={{ paddingLeft: "8%" }}>
             <span className="red">{`<h1>`} </span> CORE SKILLS{" "}
@@ -108,6 +111,9 @@ const Skills = () => {
           </ul>
           <p style={{ paddingLeft: "8%" }}>
             <span className="red">{`</p>`}</span>
+          </p>
+          <p style={{ paddingLeft: "5%" }}>
+            <span className="red">{`</>`}</span>
           </p>
           <span className="orange"> )</span>
         </div>

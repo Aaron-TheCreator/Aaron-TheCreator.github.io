@@ -24,7 +24,7 @@ const Projects = () => {
             lead a team of Front-End and Back-End Engineers to build a UI
             feature set and extend functionality of database and API
             integration. I planned sprint tasks for engineers and also pair
-            programmed to increase productivity. We developed refactored the
+            programmed to increase productivity. We developed & refactored the
             application's database and completed new features before Story Squad
             begins Alpha testing for its new Scribble Stadium product.
           </p>
@@ -62,8 +62,8 @@ const Projects = () => {
             ideas, information, photos and video and a marketplace and
             advertising tool for business. As a Full-Stack Developer Intern, I
             consulted with C-Level staff about design, program architecture, and
-            ongoing upgrades. I also built a module for the site to integrated
-            Google Translate functionality for the site.
+            ongoing upgrades. I also built a module for the site to integrate
+            Google Translate functionality.
           </p>
 
           <h3>Technologies</h3>
@@ -87,7 +87,7 @@ const Projects = () => {
             Med-Cabinet is a full-stack MVP built with a team of engineering
             students to demonstarate a full-stack medical-marijuana precription
             delivery web application. I built a custom introductory site to give
-            prospective clients a aesthetically pleasing description of the
+            prospective clients an aesthetically pleasing description of the
             app's features and a call to action to sign up or log back in. I
             imagined a sleek logo, then designed it with SVG.
           </p>
