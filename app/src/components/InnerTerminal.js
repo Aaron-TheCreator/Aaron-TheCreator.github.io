@@ -39,7 +39,7 @@ const TWindow = () => {
         commands={{
           showmsg: () => `thanks for visiting my site
           
-                          pres exit portal and type showmsg
+                          press exit portal and type showmsg
                           to pass through worm hole
                           ________________________________         
                           /                                "-_          
