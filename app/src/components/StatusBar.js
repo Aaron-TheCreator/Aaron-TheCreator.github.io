@@ -13,7 +13,7 @@ const StatusBar = () => {
   };
 
   return (
-    <div className="status-bar">
+    <div className="status-bar" id="status-bar-vs">
       <div className="status-bar-inner">
         <div className="icons">
           <div

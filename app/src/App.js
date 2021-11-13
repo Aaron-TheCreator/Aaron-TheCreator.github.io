@@ -9,8 +9,8 @@ import { StarSphere } from "./components/StarSphere";
 import SkyBox from "./components/SkyBox";
 import { OrbitControls } from "@react-three/drei";
 import { TerminalPlanet } from "./components/TerminalPlanet";
-import Terminal from "./components/Terminal";
 // jsx component
+import OuterTerminal from "./components/OuterTerminal";
 import Overlay from "./components/SpaceTop";
 import Fallback from "./components/Fallback";
 // vscodeportfolio app
@@ -141,7 +141,8 @@ function SpaceApp() {
                 <output>enter</output>
               </pre>
             </EnterButton>
-            <Terminal />
+            {/* <Terminal /> */}
+            <OuterTerminal />
           </CanvasContainer>
         </Suspense>
       )}

@@ -9,17 +9,17 @@
 
 .toolbar img {
   margin: 0;
-  width: 50px;
+  width: 5rem;
   height: 75%;
 }
 
 .toolbar p {
-  margin-left: 10px;
+  margin-left: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-weight: bold;
   height: 100%;
-  padding: 10px;
+  padding: 1rem;
   font-size: 0.8rem;
   transition: ease-in 0.1s;
 }
@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 644px) {
-  .toolbar p {
+  .hidden {
     display: none;
   }
 
@@ -100,3 +100,9 @@
     display: unset !important;
   }
 }
+
+/* @media (max-width: 645px) {
+  .toolbar p {
+    margin-left: 0.5rem;
+  }
+} */
