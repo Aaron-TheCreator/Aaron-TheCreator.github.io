@@ -1,4 +1,4 @@
-import Loader from "react-loader-spinner";
+import LoadingSpin from "react-loading-spin";
 import styled from "styled-components";
 
 const LoaderContainer = styled.div`
@@ -30,14 +30,7 @@ const Fallback = () => {
         <h1>Loading A. Aaron Burns Portfolio</h1>
       </LoadText>
       <SpinnerCont>
-        <Loader
-          type="BallTriangle"
-          color="#2a8055"
-          secondaryColor="#24523b"
-          height={300}
-          width={300}
-          timeout={10000}
-        />
+        <LoadingSpin />
       </SpinnerCont>
       <LoadText>
         <h2>View in Landscape Mode on mobile</h2>

@@ -17,7 +17,6 @@ import Fallback from "./components/Fallback";
 import VSApp from "./VSApp";
 // stylesheets
 import "./style/index.css";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const CanvasContainer = styled.div`
   width: 100%;
