@@ -20,7 +20,10 @@ const Contact = () => {
             <span className="bracket">{`{`}</span>
           </p>
           <p className="css-line">
-            email: <span className="css-value">a.aburns95@gmail.com</span>
+            email:{" "}
+            <span className="css-value">
+              <a href="mailto:a.aburns95@gmail.com">a.aburns95@gmail.com</a>
+            </span>
             <span className="bracket">;</span>
           </p>
           <p className="css-line">
@@ -46,7 +49,7 @@ const Contact = () => {
           </p>
 
           <p className="css-line">
-            location: <span className="css-value">{`"Pensacola, FL"`}</span>
+            location: <span className="css-value">{`"San Diego, CA"`}</span>
             <span className="bracket">;</span>
           </p>
           <span className="bracket">{`}`}</span>

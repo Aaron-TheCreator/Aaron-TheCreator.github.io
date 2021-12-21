@@ -18,11 +18,10 @@ const About = () => {
           I am a full-stack web developer because I learned to be one. I am an
           engineer and a big tech nerd because I was born to be one. I have a
           passion for using cutting-edge technology to create amazing products
-          and serve customers. I am from San Diego, California, and plan to move
-          back there from Pensacola, Florida as soon as possible. Before I
-          discovered my my love for Software Engineering, I specialized in tech
-          sales and customer service. Let's work together and see what we can
-          build!
+          and serve customers. I recently moved back to the West Coast after
+          living in Pensacola, FL for 5 years. Before I discovered my love for
+          Software Engineering, I specialized in tech sales and customer
+          service. Let's work together and see what we can build!
         </p>
         <a href={resume} alt="resume" className="resume">
           Resume
