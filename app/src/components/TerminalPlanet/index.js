@@ -9,7 +9,7 @@ import EarthNormalMap from "../../assets/textures/8k_earth_normal_map.jpg";
 import EarthSpecularMap from "../../assets/textures/8k_earth_specular_map.jpg";
 import EarthCloudsMap from "../../assets/textures/8k_earth_clouds.jpg";
 import TermMap from "../../assets/textures/wallpaperflare.com_wallpaper.jpg";
-import FaceMap from "../../assets/textures/face-pic.jpg";
+import FaceMap from "../../assets/textures/newprofsmll.jpeg";
 import { TextureLoader } from "three";
 
 export function TerminalPlanet(props) {
