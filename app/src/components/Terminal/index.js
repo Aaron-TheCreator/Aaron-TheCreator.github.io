@@ -13,9 +13,7 @@ const Terminal = () => {
             <button className="bar__button">&#9723;</button>
           </div>
           <p id="bar__user">
-            <pre>
-              <output>aaaronburns@aaronOS: ~</output>
-            </pre>
+            aaronburns@aaaronburnsOS
           </p>
         </section>
         {/* Terminal Body */}
