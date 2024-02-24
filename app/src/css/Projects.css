@@ -13,15 +13,44 @@
   background: #1f282f;
   padding: 2%;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* border: #f7a940 2px solid; */
 }
 
 .project .image-container {
   width: 100%;
 }
 
+.project .image-box {
+  display: flex;
+  align-items: center;
+}
+
+.project .header-image-container {
+  width: 15%;
+  height: 10%;
+  align-self: center;
+  border: #f7a940 2px solid;
+  /* make a square into a circle using border radius */
+  border-radius: 50%;
+}
+
 .image-container img {
   width: 100%;
   border-radius: 8px;
+}
+.header-image-container img {
+  width: 100%;
+  border-radius: 50%
+}
+
+#webex-logo {
+  width: 70%;
+}
+
+#cisco-secure-logo {
+  width: 60%;
 }
 
 .project h2 {
@@ -49,6 +78,10 @@
   text-decoration: underline;
 }
 
+hr {
+  height: 2px;
+}
+
 @media (max-width: 575px) {
   .pj-root {
     width: 100%;
@@ -59,7 +92,7 @@
     font-size: 0.7rem;
   }
 
-  .project h2 {
+  .project h2, .h2 {
     font-size: 0.8rem;
   }
 

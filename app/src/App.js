@@ -23,7 +23,7 @@ const CanvasContainer = styled.div`
   height: 100%;
   display: grid;
   flex-direction: row;
-  text-shadow: 0 0 5px #c8c8c8;
+  // text-shadow: 0 0 5px #c8c8c8;
   // border: 1px solid red;
 `;
 
@@ -140,7 +140,6 @@ function SpaceApp() {
                 <output>enter</output>
               </pre>
             </EnterButton>
-            {/* <Terminal /> */}
             <OuterTerminal />
           </CanvasContainer>
         </Suspense>

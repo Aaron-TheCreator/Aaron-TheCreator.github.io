@@ -49,7 +49,7 @@ const Contact = () => {
           </p>
 
           <p className="css-line">
-            location: <span className="css-value">{`"San Diego, CA"`}</span>
+            location: <span className="css-value">{`"Phoeniz, AZ / remote"`}</span>
             <span className="bracket">;</span>
           </p>
           <span className="bracket">{`}`}</span>

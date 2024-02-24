@@ -7,6 +7,8 @@ import {
   CLOSE_TERMINAL,
   ENTER,
   EXIT,
+  OPEN_GAME,
+  CLOSE_GAME,
 } from "./types";
 
 const initialState = {
@@ -14,6 +16,7 @@ const initialState = {
   page: "about.md",
   open: true,
   terminalOpen: false,
+  gameOpen: false,
   enter: false,
 };
 
@@ -26,9 +29,13 @@ export const reducer = (state = initialState, action) => {
     case CLOSE_CODE:
       return { ...state, page: "about.md", open: false };
     case OPEN_CODE:
-      return { ...state, open: true, terminalOpen: false };
+      return { ...state, page: "about.md", open: true, terminalOpen: false, gameOpen: false};
+    case OPEN_GAME:
+      return { ...state, page: "SmashKarts.io", open: false, terminalOpen: false, gameOpen: true};
+    case CLOSE_GAME:
+      return { ...state, page: "about.md", open: false, gameOpen: false, terminalOpen: false};
     case OPEN_TERMINAL:
-      return { ...state, open: false, terminalOpen: true };
+      return { ...state, open: false, terminalOpen: true, gameOpen: false};
     case CLOSE_TERMINAL:
       return { ...state, terminalOpen: false };
     case ENTER:

@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 /* scene terminal styles */
-#container {
+/* #container {
   position: absolute;
   display: flex;
   justify-self: end;
@@ -91,12 +91,12 @@ a {
   height: 100%;
   /* height: calc(100% - 2rem); */
   /* padding-top: 1px; */
-  padding-left: 1%;
+  /* padding-left: 1%; */
   /* overflow: auto; */
   /* padding-right: 1%; */
   /* margin-top: -0.1rem; */
-}
-#terminal__prompt {
+/* } */
+/* #terminal__prompt {
   display: flex;
 }
 #terminal__prompt--user {
@@ -137,5 +137,5 @@ a {
 }
 #terminal--options {
   color: #dddddd;
-}
+} */
 /* scene terminal styles end */

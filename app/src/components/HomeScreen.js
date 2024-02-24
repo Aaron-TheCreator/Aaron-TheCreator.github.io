@@ -2,10 +2,11 @@ import React from "react";
 import "../css/HomeScreen.css";
 import appleLogo from "../images/apple-logo.svg";
 import { useSelector, useDispatch } from "react-redux";
-import { openCoder, openTerminal, exitApp } from "../services/actions";
+import { openCoder, openTerminal,openGame, exitApp } from "../services/actions";
 
 import vsIcon from "../images/vcode-ico.svg";
 import termIcon from "../images/terminal-ico.svg";
+import gameIcon from "../images/video-game-svgrepo-com.svg";
 
 const HomeScreen = () => {
   const open = useSelector((state) => state.open);
@@ -42,6 +43,10 @@ const HomeScreen = () => {
         <button className="app-btn" onClick={() => dispatch(openTerminal())}>
           <img src={termIcon} alt="terminal" />
           <span className="app-btn-title">Terminal</span>
+        </button>
+        <button className="app-btn" onClick={() => dispatch(openGame())}>
+          <img src={gameIcon} alt="Video game controller "/>
+          <span className="app-btn-title"> Play Game</span>
         </button>
       </div>
     </div>
