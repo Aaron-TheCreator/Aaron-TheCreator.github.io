@@ -7,6 +7,8 @@ import SmashKarts from "./games/SmashKarts";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Draggable from "react-draggable";
+import GameSidebar from "./GameSideBar";
+import GameLauncher from "./GameLauncher";
 
 const GameWindow = () => {
   const open = useSelector((state) => state.open);
@@ -35,9 +37,8 @@ const GameWindow = () => {
       >
         <StatusBar />
         <div className="middle">
-            <SmashKarts />
-          {/* <Sidebar />
-          <FileWindow /> */}
+          <GameSidebar />
+          <GameLauncher />
           
         </div>
       </motion.div>

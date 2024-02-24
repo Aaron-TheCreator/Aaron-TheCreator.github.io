@@ -1,7 +1,7 @@
 import React from "react";
 import Terminal from "terminal-in-react";
 import { useDispatch } from "react-redux";
-import { closeTerminal, openGame } from "../services/actions";
+import { closeTerminal, openGame, openCoder, exitApp } from "../services/actions";
 import { motion } from "framer-motion";
 
 const TWindow = () => {
@@ -31,7 +31,7 @@ const TWindow = () => {
           width: "80vw",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          fontSize: "1.2rem",
+          fontSize: "1.4rem",
           fontWeight: 700,
         }}
         backgroundColor="black"
@@ -55,7 +55,7 @@ const TWindow = () => {
                       /_________________________________________--"  
           `,
           twitter: () => "https://twitter.com/thirdeyethuggin",
-          "open-twitter": () =>
+          open_twitter: () =>
             window.open("https://twitter.com/thirdeyethuggin", "_blank"),
           javascript: () =>
             "Me and JavaScript are the same age, AND we're besties :) <3 ",
@@ -99,15 +99,17 @@ const TWindow = () => {
           |_.-._.-._.-._.-._.-. \__YP ._.-._.-. \__YP ._.-._.-._.-._.-._.-._.|
           '-----------------------------------------------------------------'
                               Thanks    For    Playing`,
+          // popup: () => alert('Terminal in React'),
           open_game: () => {dispatch(openGame())},
+          code: () => {dispatch(openCoder())},
+          exit: () => {dispatch(exitApp())},
           roll_credits: () => `Thanks to:
           * author:	Blue Lantern (https://sketchfab.com/genoris2)
           * title:	CyberPunk Laptop
           * source:	https://sketchfab.com/3d-models/cyberpunk-laptop-8330c89e8431451db3aa9d15c5836ddf
           
-          * author: FOBABS (https://dev.to/fobabs)
-          * title: HTML/CSS Ubuntu Terminal
-          * source: https://github.com/fobabs/ubuntu-terminal
+          * title: Terminal In React
+          * source: https://www.npmjs.com/package/terminal-in-react
           
            
           * author: Nathaniel Richards
@@ -118,6 +120,11 @@ const TWindow = () => {
           * author: Mateusz Wisniowski
           * title: HDRI-to-CubeMap
           * source: https://matheowis.github.io/HDRI-to-CubeMap/
+          
+
+          * author: Unblocked Games
+          * title: Smash Karts
+          * source: 
           `,
         }}
         descriptions={{
@@ -125,9 +132,11 @@ const TWindow = () => {
           cheatcode: false,
           showmsg: "shows a message",
           twitter: "reveals my twitter link",
-          "open-twitter": "redirects to twiiter page",
+          open_twitter: "redirects to twiiter page",
           javascript: "What do I Think?",
           open_game: "Play a game without leaving my website",
+          code: "Open my portfolio code",
+          exit: "Return to the void of space",
           roll_credits: "See who helped me create this experience",
         }}
         msg="You have found my terminal O_o ...type help for options"

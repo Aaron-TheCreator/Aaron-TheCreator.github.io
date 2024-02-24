@@ -12,11 +12,11 @@ const StatusBar = () => {
     }, 0);
   };
   const closeWindow = (page) => {
-    return page === "SmashKarts.io" ? closeGame() : closeCoder();
+    return page === "SmashKarts.io" || page === "Highway Racer 3D" ? closeGame() : closeCoder();
   };
 
   return (
-    <div className="status-bar" id={page !== "SmashKarts.io" ? "status-bar-vs": "status-bar-gw"}>
+    <div className="status-bar" id={page === "SmashKarts.io" || page === "Highway Racer 3D" ? "status-bar-gw": "status-bar-vs"}>
       <div className="status-bar-inner">
         <div className="icons">
           <div
