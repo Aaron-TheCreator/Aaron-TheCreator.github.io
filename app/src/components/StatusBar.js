@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { closeCoder } from "../services/actions";
+import { closeCoder, closeGame } from "../services/actions";
 
 const StatusBar = () => {
   const page = useSelector((state) => state.page);
@@ -8,12 +8,15 @@ const StatusBar = () => {
 
   const handleClose = () => {
     setTimeout(() => {
-      dispatch(closeCoder());
+      dispatch(closeWindow(page));
     }, 0);
+  };
+  const closeWindow = (page) => {
+    return page === "SmashKarts.io" ? closeGame() : closeCoder();
   };
 
   return (
-    <div className="status-bar" id="status-bar-vs">
+    <div className="status-bar" id={page !== "SmashKarts.io" ? "status-bar-vs": "status-bar-gw"}>
       <div className="status-bar-inner">
         <div className="icons">
           <div

@@ -1,7 +1,7 @@
 import React from "react";
 import Terminal from "terminal-in-react";
 import { useDispatch } from "react-redux";
-import { closeTerminal } from "../services/actions";
+import { closeTerminal, openGame } from "../services/actions";
 import { motion } from "framer-motion";
 
 const TWindow = () => {
@@ -99,6 +99,7 @@ const TWindow = () => {
           |_.-._.-._.-._.-._.-. \__YP ._.-._.-. \__YP ._.-._.-._.-._.-._.-._.|
           '-----------------------------------------------------------------'
                               Thanks    For    Playing`,
+          open_game: () => {dispatch(openGame())},
           roll_credits: () => `Thanks to:
           * author:	Blue Lantern (https://sketchfab.com/genoris2)
           * title:	CyberPunk Laptop
@@ -126,6 +127,7 @@ const TWindow = () => {
           twitter: "reveals my twitter link",
           "open-twitter": "redirects to twiiter page",
           javascript: "What do I Think?",
+          open_game: "Play a game without leaving my website",
           roll_credits: "See who helped me create this experience",
         }}
         msg="You have found my terminal O_o ...type help for options"

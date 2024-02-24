@@ -5,7 +5,7 @@ import "../../css/Skills.css";
 const Skills = () => {
   return (
     <div className="sk-root">
-      <CodeBar rowAmount={68} />
+      <CodeBar rowAmount={95} />
       <div className="sk-content">
         <p>
           {" "}
@@ -44,16 +44,19 @@ const Skills = () => {
             <span className="red">{`<p>`}</span>
           </p>
           <ul style={{ paddingLeft: "20%" }}>
-            <li>Advanced JavaScript</li>
+            <li>JavaScript</li>
+            <li>Python</li>
             <li>Git And Repo Management</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>LESS</li>
             <li>SCSS</li>
-            <li>Python</li>
             <li>SQL</li>
             <li>RDBMS</li>
+            <li>NoSQL</li>
             <li>Docker</li>
+            <li>SSO & IAM</li>
+            <li>Cloud CI/CD</li>
             <li>Agile Development / SDLC</li>
           </ul>
           <p style={{ paddingLeft: "8%" }}>
@@ -90,7 +93,10 @@ const Skills = () => {
             <li>Express</li>
             <li>PostgreSQL</li>
             <li>SQLite</li>
-            <li>Netlify</li>
+            <li>DynamoDB</li>
+            <li>AWS</li>
+            <li>Okta</li>
+            <li>Github Actions</li>
             <li>Vercel</li>
             <li>Heroku</li>
           </ul>
