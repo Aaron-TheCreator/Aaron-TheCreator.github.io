@@ -1,7 +1,7 @@
 import React from "react";
 import CodeBar from "../CodeBar";
 import "../../css/About.css";
-import resume from "../../images/_A. Aaron Burns - WebResume (2).pdf";
+import resume from "../../images/A. Aaron Burns - Resume.pdf";
 
 const About = () => {
   return (

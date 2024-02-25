@@ -16,7 +16,7 @@ const GameSidebar = () => {
         dispatch(updatePage(newPage));
     };
     return (
-        <div className="sb-root">
+        <div className="sb-root game">
             <div className={`sb-item ${page === "SmashKarts.io" && "active"}`}>
                 <button style={{background: "#222b33", color: "white"}} onClick={() => handleChange("SmashKarts.io")}>
                     <img style={{height: "100%", width: "80%", borderRadius: "25%"}}src={smashKartsIcon} alt="Smash Karts game" />
