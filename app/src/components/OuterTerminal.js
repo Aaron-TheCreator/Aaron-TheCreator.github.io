@@ -2,7 +2,7 @@ import React from "react";
 import Terminal from "terminal-in-react";
 import Draggable from "react-draggable";
 import { useDispatch } from "react-redux";
-import { closeTerminal } from "../services/actions";
+import { closeTerminal, enterApp } from "../services/actions";
 import { motion } from "framer-motion";
 
 const OTWindow = () => {
@@ -39,6 +39,7 @@ const OTWindow = () => {
           backgroundColor="black"
           barColor="#F8F8F8"
           commands={{
+            enter: () => dispatch(enterApp()),
             showmsg: () => `thanks for visiting my site
           
                           type 'cheatcode' for a surprise
@@ -50,28 +51,38 @@ const OTWindow = () => {
             cheatcode: () => `               
            click enter , find terminal and type cheatcode for you prize!`,
             roll_credits: () => `Thanks to:
-          * author:	Blue Lantern (https://sketchfab.com/genoris2)
-          * title:	CyberPunk Laptop
-          * source:	https://sketchfab.com/3d-models/cyberpunk-laptop-8330c89e8431451db3aa9d15c5836ddf
-          
-          * author: FOBABS (https://dev.to/fobabs)
-          * title: HTML/CSS Ubuntu Terminal
-          * source: https://github.com/fobabs/ubuntu-terminal
-          
-           
-          * author: Nathaniel Richards
-          * title: vscodeportfolio
-          * source: https://github.com/NateTheDev1/vscodeportfolio 
-           
-           
-          * author: Mateusz Wisniowski
-          * title: HDRI-to-CubeMap
-          * source: https://matheowis.github.io/HDRI-to-CubeMap/
-          `,
+            * author:	Blue Lantern (https://sketchfab.com/genoris2)
+            * title:	CyberPunk Laptop
+            * source:	https://sketchfab.com/3d-models/cyberpunk-laptop-8330c89e8431451db3aa9d15c5836ddf
+            
+            * title: Terminal In React
+            * source: https://www.npmjs.com/package/terminal-in-react
+            
+             
+            * author: Nathaniel Richards
+            * title: vscodeportfolio
+            * source: https://github.com/NateTheDev1/vscodeportfolio 
+             
+             
+            * author: Mateusz Wisniowski
+            * title: HDRI-to-CubeMap
+            * source: https://matheowis.github.io/HDRI-to-CubeMap/
+            
+  
+            * author: Unblocked Games
+            * title: Smash Karts
+            * source: https://smashkarts.io/ 
+            
+  
+            * author: Unblocked Games
+            * title: Highway Racer 3D
+            * source: https://smashkartsonline.github.io/v5/highway-racer-3d
+            `,
           }}
           descriptions={{
             show: false,
             cheatcode: false,
+            enter: "Enter Portfolio OS",
             twitter: false,
             "open-twitter": false,
             showmsg: "shows a message",
