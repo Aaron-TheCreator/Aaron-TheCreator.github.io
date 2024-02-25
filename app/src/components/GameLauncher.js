@@ -7,7 +7,7 @@ const GameLauncher = () => {
     const page = useSelector((state) => state.page);
 
     return (
-        <div className="fw-content">
+        <div className="fw-content game">
             {page === "SmashKarts.io" && <SmashKarts />}
             {page === "Highway Racer 3D" && <HighwayRacer />}
         </div>

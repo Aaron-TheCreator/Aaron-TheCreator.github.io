@@ -26,7 +26,7 @@ const GameSidebar = () => {
             <div className={`sb-item ${page === "Highway Racer 3D" && "active"}`}>
             <button style={{background: "#222b33", color: "white"}} onClick={() => handleChange("Highway Racer 3D")}>
                     <img style={{height: "100%", width: "80%", borderRadius: "25%"}} src={highwayRacerIcon} alt="Smash Karts game" />
-                    HighwayRacer3D
+                    Highway<br/>Racer3D
                 </button>
             </div>
         </div>
