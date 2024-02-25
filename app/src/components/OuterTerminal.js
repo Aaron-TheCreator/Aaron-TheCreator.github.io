@@ -49,7 +49,7 @@ const OTWindow = () => {
               window.open("https://twitter.com/thirdeyethuggin", "_blank"),
             three: () => "this scene is made using three.js, isn't it great?",
             cheatcode: () => `               
-           click enter , find terminal and type cheatcode for you prize!`,
+           click enter button or type 'enter' command , find terminal and type 'cheatcode' for your prize!`,
             roll_credits: () => `Thanks to:
             * author:	Blue Lantern (https://sketchfab.com/genoris2)
             * title:	CyberPunk Laptop
