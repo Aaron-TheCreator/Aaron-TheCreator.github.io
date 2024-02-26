@@ -27,7 +27,6 @@ const CanvasContainer = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid red;
   // text-shadow: 0 0 5px #c8c8c8;
   // border: 1px solid red;
 `;
