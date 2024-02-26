@@ -5,10 +5,10 @@ const Container = styled.div`
   position: absolute;
   // width: 100%;
   // height: 100%;
-  // top: 1;
-  // left: 1;
+  top: 0;
+  left:0;
+  align-self: space-between;
   margin: 5%;
-  align-self: start;
   display: flex;
   flex-direction: column;
   z-index: 1;

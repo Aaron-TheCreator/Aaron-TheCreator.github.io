@@ -21,8 +21,13 @@ import "./style/index.css";
 const CanvasContainer = styled.div`
   width: 100%;
   height: 100%;
-  display: grid;
-  flex-direction: row;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid red;
   // text-shadow: 0 0 5px #c8c8c8;
   // border: 1px solid red;
 `;
@@ -32,13 +37,11 @@ const OrbitButton = styled.button`
   width: auto;
   font: Inconsolata, monospace;
   font-size: 1.5rem;
-  background-color: #black;
   background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
   border: 4px solid black;
   border-radius: 5%;
   color: white;
-  align-self: end;
-  justify-self: left;
+  align-self: flex-start;
   margin-bottom: 2%;
   margin-left: 2%;
   z-index: 1;
@@ -65,7 +68,6 @@ const EnterButton = styled.button`
   width: auto;
   font: Inconsolata, monospace;
   font-size: 1.5rem;
-  background-color: #black;
   background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
   border: 4px solid black;
   border-radius: 5%;
@@ -73,8 +75,8 @@ const EnterButton = styled.button`
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 2%;
-  align-self: end;
-  justify-self: center;
+  align-self: center;
+  justify-self: right;
   z-index: 1;
   transition: all 0.4s ease 0s;
   &:hover {

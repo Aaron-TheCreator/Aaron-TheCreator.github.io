@@ -103,7 +103,7 @@ const TWindow = () => {
           open_game: () => {dispatch(openGame())},
           code: () => {dispatch(openCoder())},
           exit: () => {dispatch(exitApp())},
-          roll_credits: () => {return `Thanks to:
+          roll_credits: () => `Thanks to:
           * author:	Blue Lantern (https://sketchfab.com/genoris2)
           * title:	CyberPunk Laptop
           * source:	https://sketchfab.com/3d-models/cyberpunk-laptop-8330c89e8431451db3aa9d15c5836ddf
@@ -130,7 +130,7 @@ const TWindow = () => {
           * author: Unblocked Games
           * title: Highway Racer 3D
           * source: https://smashkartsonline.github.io/v5/highway-racer-3d
-          `.split("\n").map((line) => <p>{line}</p>)},
+          `,
         }}
         descriptions={{
           show: false,
