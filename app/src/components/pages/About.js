@@ -30,7 +30,7 @@ const About = () => {
           alt="Lambda School Full-Stack Certiicate"
           className="resume"
         >
-          Lambda School Certificate
+          Bloom Institute of Technology Certificate
         </a>
       </div>
     </div>

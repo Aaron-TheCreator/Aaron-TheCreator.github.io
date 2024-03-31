@@ -1,12 +1,44 @@
 import React from "react";
 import Terminal from "terminal-in-react";
 import Draggable from "react-draggable";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { closeTerminal, enterApp } from "../services/actions";
 import { motion } from "framer-motion";
 
 const OTWindow = () => {
   const dispatch = useDispatch();
+  let pres = (document.querySelectorAll(".sc-gzVnrw"));
+  useEffect(() => {
+    let prelist = document.getElementsByClassName("sc-gzVnrw duUAwb");
+    let link = document.createElement("a")
+    let p = document.createElement("pre")
+    let p1 = document.createElement("pre")
+    p.innerHTML = "google"
+    link.href = "https://www.google.com"
+    link.innerHTML = "here"
+    p.innerHTML = "click"
+    p1.innerHTML = "to go to link"
+    let match = `
+      click 'A. Aaron Burns' to see
+          GitHub profile
+      click planet to see my world
+      click enable viewer
+          to look around
+      click enter to learn
+          about 'Aaron-TheCreator'
+      enter help command
+          for more`;
+    // prelist[0]
+  
+  }, );
+  console.log(pres);
+  // text[0].children[0] = link
+  
+  // for (let i = 0; i < links.length; i++) {
+
+  // }
+  
 
   return (
     <Draggable handle=".sc-bxivhb">

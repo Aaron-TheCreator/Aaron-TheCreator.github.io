@@ -7,6 +7,7 @@ import {
   CLOSE_TERMINAL,
   ENTER,
   EXIT,
+  RUN_PROGRAM,
   OPEN_GAME,
   CLOSE_GAME,
 } from "./types";
@@ -18,6 +19,7 @@ const initialState = {
   terminalOpen: false,
   gameOpen: false,
   enter: false,
+  runProgram: false,
 };
 
 export const reducer = (state = initialState, action) => {
@@ -42,6 +44,8 @@ export const reducer = (state = initialState, action) => {
       return { ...state, enter: true };
     case EXIT:
       return { ...state, enter: false };
+    case RUN_PROGRAM:
+      return { ...state, runProgram: true };
     default:
       return { ...state };
   }

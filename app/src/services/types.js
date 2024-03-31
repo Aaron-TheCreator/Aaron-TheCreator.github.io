@@ -7,4 +7,5 @@ export const CLOSE_GAME = "CLOSE_GAME";
 export const OPEN_TERMINAL = "OPEN_TERMINAL";
 export const CLOSE_TERMINAL = "CLOSE_TERMINAL";
 export const ENTER = "ENTER";
+export const RUN_PROGRAM = "RUN_PROGRAM";
 export const EXIT = "EXIT";
