@@ -3,7 +3,7 @@ import { Canvas } from "react-three-fiber";
 import styled from "styled-components";
 // 3D Models
 import { useSelector, useDispatch } from "react-redux";
-import { enterApp } from "./services/actions";
+import { enterApp, runProgram } from "./services/actions";
 import LapTop from "./components/LapTop";
 import { StarSphere } from "./components/StarSphere";
 import SkyBox from "./components/SkyBox";
@@ -13,6 +13,7 @@ import { TerminalPlanet } from "./components/TerminalPlanet";
 import OuterTerminal from "./components/OuterTerminal";
 import Overlay from "./components/SpaceTop";
 import Fallback from "./components/Fallback";
+import ApplicationWindow from "./components/ApplicationWindow";
 // vscodeportfolio app
 import VSApp from "./VSApp";
 // stylesheets
@@ -62,7 +63,7 @@ const OrbitButton = styled.button`
   }
 `;
 
-const EnterButton = styled.button`
+export const EnterButton = styled.button`
   position: absolute;
   width: auto;
   font: Inconsolata, monospace;
@@ -105,11 +106,15 @@ function SpaceApp() {
       dispatch(enterApp());
     }, 0);
   };
+
   const enter = useSelector((state) => state.enter);
+  const runProgram = useSelector((state) => state.runProgram);
 
   return (
     <>
-      {enter ? (
+      {!runProgram ?
+       (<ApplicationWindow />):
+        enter ? (
         <VSApp />
       ) : (
         <Suspense fallback={<Fallback />}>

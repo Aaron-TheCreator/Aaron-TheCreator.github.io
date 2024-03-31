@@ -7,6 +7,7 @@ import {
   OPEN_TERMINAL,
   CLOSE_TERMINAL,
   ENTER,
+  RUN_PROGRAM,
   EXIT,
 } from "../services/types";
 
@@ -44,4 +45,8 @@ export const enterApp = () => (dispatch) => {
 
 export const exitApp = () => (dispatch) => {
   dispatch({ type: EXIT, payload: false });
+};
+
+export const runProgram = () => (dispatch) => {
+  dispatch({ type: RUN_PROGRAM, payload: true });
 };
