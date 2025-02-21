@@ -5,8 +5,8 @@ const HighwayRacer = () => {
     return (
         <div className="gameFrame">
             <iframe 
-                title="Smash Karts" 
-                src="https://smashkartsonline.github.io/v5/highway-racer-3d"
+                title="Pinball" 
+                src="https://cwar.de/pinball/simpleball.html"
                 style={{
                 position: "relative", 
                 top:0, 
