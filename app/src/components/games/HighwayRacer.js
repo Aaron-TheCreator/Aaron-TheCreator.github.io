@@ -6,7 +6,7 @@ const HighwayRacer = () => {
         <div className="gameFrame">
             <iframe 
                 title="Pinball" 
-                src="https://cwar.de/pinball/simpleball.html"
+                src="https://alula.github.io/SpaceCadetPinball/"
                 style={{
                 position: "relative", 
                 top:0, 
