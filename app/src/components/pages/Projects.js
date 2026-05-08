@@ -10,6 +10,42 @@ const Projects = () => {
       <div className="pg-content">
         <h1>Professional Work</h1>
         <div className="project">
+          <h2> Gusto, Inc. - Symmetry Software</h2>
+          <h3> Client Support Engineer</h3>
+          <div className="header-image-row gusto-images">
+            <div className="header-image-container">
+              <img src="/assets/gusto-logo.png" alt="Gusto, Inc. logo" />
+            </div>
+            <div className="header-image-container">
+              <img
+                src="/assets/symmetry_software_logo.jpeg"
+                alt="Symmetry Software logo"
+              />
+            </div>
+          </div>
+
+          <h3>Overview</h3>
+          <p>Software Developer</p>
+          <ul>
+            <li>Developed tools to automate high-frequency client support requests</li>
+            <li>Gusto Hackathon: Worked on small team to build & propose LLM to provide clients with software debugging and tax compliance assistance. <strong>Initial PoC was developed and launched as "Symmetry Tax Logic"</strong></li>
+            <li>Built a fullstack Web SPA for the Sales department to supplement their pitch of Symmetry Tax Engine to a specialized, prospective client category</li>
+            <li>Developed a suite of specialized tools for Client Support, including REST API automations, Shell scripts, other utilities, & agentic IDE plugins</li>
+            <li>Built web-scrapers into an AI workflow to help Tax Research department collect tax data from State agency websites and influence tax determination investigations</li>
+          </ul>
+
+          <p>Client Support Analyst</p>
+          <ul>
+            <li>Debugged client implementations of Symmetry Tax Engine; advised on proper syntax and tax compliance implications</li>
+            <li>Supported clients of full Symmetry Software product lineup with issues ranging from database accuracy, product & client business logic, User Interface, product enhancement and more </li>
+            <li>Worked cross-functionally with Engineering, Tax Research, Documentation, & Sales teams to assist clients in every stage of the customer lifecycle</li>
+          </ul>
+
+          <h3>Technologies</h3>
+          <p> Lua, C, Java, .Net, Python, Typescript, REST, Shell, SQL, AWS, Terraform, Docker, Git, CI/CD, RAG, RLHF, LLM, GNIS</p>
+        </div>
+
+        <div className="project">
           <h2> Cisco Systems, Inc.</h2>
           <h3>Software Engineer</h3>
           <div className="header-image-container">
