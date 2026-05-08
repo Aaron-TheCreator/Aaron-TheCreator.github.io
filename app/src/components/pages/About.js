@@ -1,7 +1,7 @@
 import React from "react";
 import CodeBar from "../CodeBar";
 import "../../css/About.css";
-import resume from "../../images/AveryAaronBurnsResume.pdf";
+import resume from "../../images/AveryAaronBurnsResume26.pdf";
 
 const About = () => {
   return (
@@ -15,21 +15,23 @@ const About = () => {
           alt="Aaron Burns"
         />
         <p>
-          I am a Software Engineer with diverse experience in developer
-          evangelism and common services engineering. Built developer
-          communities, created technical content, and introduced new API/SDK
-          features as a Webex Developer Evangelist. This honed my communication
-          and technical skills, enabling me to connect with audiences and
-          explain complex concepts clearly. As a Common Services Engineer, I
-          tackled process streamlining, innovative solutions, and issue
-          resolution, solidifying my problem-solving and teamwork abilities.
+          I build high-impact software with a focus on the people who use it.
+          From my roots in community building and API advocacy to my current
+          work in engineering, I specialize in technical solutions that bridge
+          the gap between complex code and seamless customer value.
         </p>
         <p>
-          Now, I'm eager to learn and grow in a way that leverages my existing
-          skills and expands my potential. I'm particularly interested in
-          opportunities that allow me to combine my technical expertise with my
-          passion for community building and user experience, contributing to
-          the development of cutting-edge software solutions.
+          As a designated AI Change Champion, I lead the integration of LLMs to
+          transform technical ecosystems and workflows. My engineering approach
+          is defined by a commitment to the user: whether I&apos;m prototyping
+          conversational interfaces for data visualization or architecting
+          AI-driven tools that simplify complex system analysis, I ensure every
+          feature serves a practical, user-first purpose.
+        </p>
+        <p>
+          I thrive at the intersection of AI innovation, robust engineering, and
+          customer-centric design, building the next generation of intuitive
+          software solutions.
         </p>
         <a href={resume} alt="resume" className="resume">
           Resume
