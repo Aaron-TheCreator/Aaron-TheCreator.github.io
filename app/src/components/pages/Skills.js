@@ -45,8 +45,11 @@ const Skills = () => {
           </p>
           <ul style={{ paddingLeft: "20%" }}>
             <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>Python</li>
             <li>Git And Repo Management</li>
+            <li>REST APIs</li>
+            <li>Shell Scripting</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>LESS</li>
@@ -91,14 +94,35 @@ const Skills = () => {
           <ul style={{ paddingLeft: "20%" }}>
             <li>NodeJS</li>
             <li>Express</li>
+            <li>Terraform</li>
             <li>PostgreSQL</li>
             <li>SQLite</li>
             <li>DynamoDB</li>
             <li>AWS</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C# / .NET</li>
+            <li>Lua</li>
             <li>Okta</li>
             <li>Github Actions</li>
             <li>Vercel</li>
             <li>Heroku</li>
+          </ul>
+          <p style={{ paddingLeft: "8%" }}>
+            <span className="red">{`</p>`}</span>
+          </p>
+          <p style={{ paddingLeft: "8%" }}>
+            <span className="red">{`<h1>`} </span> AI / DATA / AUTOMATION{" "}
+            <span className="red">{`</h1>`}</span>
+          </p>
+          <p style={{ paddingLeft: "8%" }}>
+            <span className="red">{`<p>`}</span>
+          </p>
+          <ul style={{ paddingLeft: "20%" }}>
+            <li>LLMs</li>
+            <li>RAG (Retrieval-Augmented Generation)</li>
+            <li>RLHF</li>
+            <li>GNIS (Geographic Names Information System)</li>
           </ul>
           <p style={{ paddingLeft: "8%" }}>
             <span className="red">{`</p>`}</span>
@@ -111,6 +135,7 @@ const Skills = () => {
             <span className="red">{`<p>`}</span>
           </p>
           <ul style={{ paddingLeft: "20%" }}>
+            <li>Selenium</li>
             <li>Cypress.io</li>
             <li>Jest</li>
             <li>supertest</li>
